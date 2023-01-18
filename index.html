@@ -1,0 +1,28 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container round-border">
+            <div class="team team-home">
+                <h3 class="team-title">HOME</h3>
+                <p id="home-el" class="team-score timer-font round-border"></p>
+                <div class="score-points">
+                    <button class="points timer-font round-border" onclick="homePlusTwoPoints()">+2</button>
+                    <button class="points timer-font round-border" onclick="homePlusThreePoints()">+3</button>
+                    <button class="points timer-font round-border" onclick="homePlusFivePoints()">+5</button>
+                </div>
+            </div>
+            <div class="team team-guest">
+                <h3 class="team-title">GUEST</h3>
+                <p id="guest-el" class="team-score timer-font round-border"></p>
+                <div class="score-points">
+                    <button class="points timer-font round-border" onclick="guestPlusTwoPoints()">+2</button>
+                    <button class="points timer-font round-border" onclick="guestPlusThreePoints()">+3</button>
+                    <button class="points timer-font round-border" onclick="guestPlusFivePoints()">+5</button>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

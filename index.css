@@ -1,0 +1,90 @@
+:root {
+    --dark-blue: #1B244A;
+    --light-purple: #9AABD8;
+    --black: #080001;
+    --white: #EEEEEE;
+    --red: #F94F6D;
+}
+
+@font-face {
+    font-family: cursedTimer;
+    src: url("./fonts/CursedTimerUlil-Aznm.ttf")
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("./images/rugby.jpg");
+    background-size: cover;
+    max-height: 100vh;
+    color: var(--white);
+}
+
+.container {
+    max-width: 575px;
+    min-height: 385px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--dark-blue);
+    
+}
+
+.team {
+    text-align: center;
+    min-width: 155px;
+    margin: auto 0;
+}
+
+.team-home {
+    margin-right: -50px
+}
+
+.team-title {
+    font-size: 2.5rem;
+}
+
+.team-score {
+    color: var(--red);
+    background-color: var(--black);
+    font-size: 5.625rem;
+    margin: 20px 0 26px 0;
+    padding: 20px 0 4px 0; 
+}
+
+.score-points {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.125rem;
+}
+
+.points {
+    color: var(--light-purple);
+    background: none;
+    min-width: 45px;
+    min-height: 45px;
+    padding-top: 4px;
+    border: 2px solid var(--light-purple);
+    text-align: center;
+    cursor: pointer;
+}
+
+.points:hover {
+    color: var(--dark-blue);
+    background: var(--light-purple);
+    border: 2px solid var(--dark-blue);
+}
+
+
+/* UTILITY CLASSES */
+.timer-font {
+    font-family: cursedTimer;
+}
+
+.round-border {
+    border-radius: 5px;
+}
